@@ -1,0 +1,25 @@
+--- crafted-0.1.3/configure.in.orig	Tue Mar  5 23:35:12 2002
++++ crafted-0.1.3/configure.in	Sun Dec 22 22:50:42 2002
+@@ -55,18 +55,18 @@
+ 
+ if test -z "$LIBZ"; then
+   AC_CHECK_LIB(z, gzsetparams,
+-               AC_CHECK_HEADER(zlib.h,
++               [AC_CHECK_HEADER(zlib.h,
+                                [LIBS="$LIBS -lz"
+                                 AC_DEFINE(HAVE_ZLIB)],
+-                               AC_MSG_ERROR(*** ZLIB header files not found ***)),
++                               AC_MSG_ERROR(*** ZLIB header files not found ***))],
+                AC_MSG_ERROR(*** ZLIB library not found ***))
+ fi
+ 
+ if test -z "$LIBPNG"; then
+   AC_CHECK_LIB(png, png_read_info,
+-               AC_CHECK_HEADER(png.h,
++               [AC_CHECK_HEADER(png.h,
+                                png_ok=yes,
+-                               png_ok=no),
++                               png_ok=no)],
+                AC_MSG_ERROR(*** PNG library not found ***), -lz -lm)
+   if test "$png_ok" = yes; then
+     AC_MSG_CHECKING([for png_structp in png.h])
