@@ -5,7 +5,7 @@ Version:	0.1.3
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/freecraft/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/freecraft/%{name}-%{version}.tar.gz
 Patch0:		%{name}-acfix.patch
 URL:		http://freecraft.org/
 BuildRequires:	autoconf
