@@ -16,7 +16,6 @@ BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	libpng-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-
 %description
 Crafted - an editor for Freecraft maps.
 
@@ -39,7 +38,8 @@ Crafted - edytor do map Freecrafta.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %find_lang %{name}
 
