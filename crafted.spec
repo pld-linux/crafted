@@ -24,7 +24,7 @@ Crafted - edytor do map Freecrafta.
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
 
 %build
 %{__gettextize}
