@@ -1,5 +1,5 @@
 Summary:	Crafted - an editor for Freecraft maps
-Summary(pl):	Crafted - edytor do map Freecrafta
+Summary(pl.UTF-8):   Crafted - edytor do map Freecrafta
 Name:		crafted
 Version:	0.1.3
 Release:	1
@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Crafted - an editor for Freecraft maps.
 
-%description -l pl
+%description -l pl.UTF-8
 Crafted - edytor do map Freecrafta.
 
 %prep
